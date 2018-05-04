@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar color = "secondary">
+    
+    <ion-title>หน้าเเรก</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="row">
+     <ion-slides pager>
+      <ion-slide>
+        <img src="../../assets/imgs/1.jpg" alt="">
+      </ion-slide>
+    
+      <ion-slide>
+          <img src="../../assets/imgs/2.jpg" alt="">
+      </ion-slide>
+    
+      <ion-slide>
+          <img src="../../assets/imgs/3.jpg" alt="">
+      </ion-slide>  
+    </ion-slides>
+  </div>
+  <div class="row">
+      <ion-list>
+          <ion-item *ngFor =" let item of beverageList">
+            <ion-avatar item-start>
+              <img src="{{item.img}}" >
+            </ion-avatar>
+            <h2>{{item.menu_name}}</h2>
+            <p>Ugh. As if.</p>
+          </ion-item>
+        </ion-list> 
+      </div>
+      <div> 
+        
+      </div>
+  
+   
+      
+</ion-content>
